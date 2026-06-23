@@ -1,14 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Trip Manager</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-       prompt("enter your age");
 
-    </script>
+<!-- Login -->
+
+
+<!-- Website -->
+
+
+<nav>
+  <h2>Trip Manager</h2>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#booking">Booking</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button onclick="toggleDark()">🌙</button>
+  <button onclick="logout()">Logout</button>
+</nav>
+
+<section id="home" class="hero">
+  <h1>Explore The World</h1>
+  <p>Your Journey Begins Here</p>
+</section>
+
+<section class="search">
+  <h2>Search Destination</h2>
+
+  <input
+    type="text"
+    id="searchBox"
+    placeholder="Search..."
+    onkeyup="searchDestination()"
+  >
+
+  <ul id="destinationList">
+    <li>Paris</li>
+    <li>Dubai</li>
+    <li>Maldives</li>
+    <li>Singapore</li>
+    <li>London</li>
+  </ul>
+</section>
+
+<section id="packages">
+  <h2>Popular Packages</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Dubai Package</h3>
+      <p>₹25,000</p>
+    </div>
+
+    <div class="card">
+      <h3>Paris Package</h3>
+      <p>₹45,000</p>
+    </div>
+
+    <div class="card">
+      <h3>Maldives Package</h3>
+      <p>₹35,000</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Destination Gallery</h2>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/300?1">
+    <img src="https://picsum.photos/300?2">
+    <img src="https://picsum.photos/300?3">
+    <img src="https://picsum.photos/300?4">
+  </div>
+</section>
+
+<section id="booking">
+  <h2>Book Your Trip</h2>
+
+  <input type="text" id="name" placeholder="Name">
+  <input type="text" id="place" placeholder="Destination">
+  <input type="date" id="date">
+
+  <button onclick="bookTrip()">Book</button>
+
+  <p id="msg"></p>
+</section>
+
+
+<section>
+  <h2>About Us</h2>
+
+  <p>
+    Trip Manager helps people explore beautiful destinations
+    with affordable packages and premium services.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Email">
+  <textarea placeholder="Message"></textarea>
+
+  <button>Send</button>
+</section>
+
+<footer>
+  © 2026 Trip Manager
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
